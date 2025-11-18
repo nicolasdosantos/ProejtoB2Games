@@ -1,0 +1,5 @@
+<?php
+
+    $nomeArq = "db.json";
+
+?>
