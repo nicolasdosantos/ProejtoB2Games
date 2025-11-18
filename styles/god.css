@@ -61,23 +61,64 @@
     transition-property: width, left;
 }
 
-
+.tela{
+    background-color: #14213D;
+    height: 100%;
+    width: 100%;
+}
 .content {
     height: calc(100vh - 8vh);
-    background-color: #14213D;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 15px;
 }
 .img img{
 
-    height: 30vh;
-    width: 15vw;
+    height: 60vh;
+    width: 30vw;
 }
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo h1{
 
+    color: #5F5F5F;
+}
+.ano{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
+.ano p{
+    color: #5F5F5F;
+    font-size: 25px;
+    font-weight: bold;
+}
+.jogo{
 
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
+.jogo p{
+    color: #5F5F5F;
+}
+.notice{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.notes p{
+
+    width: 50vw;
+}
 
 
 
