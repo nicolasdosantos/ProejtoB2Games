@@ -1,3 +1,3 @@
 <?php
-    $nomeArq = "php/db.json";
+    $nomeArq = "../data/db.json";
 ?>

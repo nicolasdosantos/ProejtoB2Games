@@ -32,15 +32,15 @@ if (isset($_REQUEST["usuario"]) && isset($_REQUEST["senha"])) {
                 exit;
 
             } else {
-                echo "<h2>Senha incorreta!</h2><a href='../html/Login.html'>Voltar</a>";
+                echo "<h2>Senha incorreta!</h2><a href='../html/login.html'>Voltar</a>";
             }
         } else {
-            echo "<h2>Usuário não encontrado!</h2><a href='../html/Login.html'>Voltar</a>";
+            echo "<h2>Usuário não encontrado!</h2><a href='../html/login.html'>Voltar</a>";
         }
     } else {
-        echo "<h2>Nenhum usuário cadastrado!</h2><a href='../html/Login.html'>Cadastrar</a>";
+        echo "<h2>Nenhum usuário cadastrado!</h2><a href='../html/login.html'>Cadastrar</a>";
     }
 } else {
-    echo "<h2>Nenhum dado foi enviado!</h2><a href='../html/Login.html'>Voltar</a>";
+    echo "<h2>Nenhum dado foi enviado!</h2><a href='../html/login.html'>Voltar</a>";
 }
 ?>

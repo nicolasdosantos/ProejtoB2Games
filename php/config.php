@@ -1,5 +1,5 @@
 <?php
 
-    $nomeArq = "db.json";
+    $nomeArq = "../data/db.json";
 
 ?>
