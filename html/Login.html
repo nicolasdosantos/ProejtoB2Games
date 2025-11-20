@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/contato.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Contato</title>
-  </head>
 
-  <body>
-    <main>
-      <div class="content">
-        <div class="form">
-          <div>
-            <h1>Login</h1>
-          </div>
-          <div>
-            <form action="../php/login.php" method="post">
-              <div class="inpt">
-                <input type="text" name="usuario" placeholder="Usuario: " />
-                <input type="number" name="senha" placeholder="Senha: " />
-              </div>
-            </form>
-          </div>
-          <div class="btn">
-            <div>
-              <button>
-                <a style="color: black"><strong>Entrar</strong></a>
-              </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <title>Contato</title>
+</head>
+
+<body>
+  <main>
+    <div class="content">
+      <div class="form">
+        <div>
+          <h1>Login</h1>
+        </div>
+        <div>
+          <form action="../php/login.php" method="post">
+            <div class="inpt">
+              <input type="text" name="usuario" placeholder="Usuario: " />
+              <input type="number" name="senha" placeholder="Senha: " />
             </div>
-            <div class="esq">
-              <a href="cadastro.html" style="color: white"
-                ><strong>Fazer cadastro</strong></a
-              >
-            </div>
+
+        </div>
+        <div class="btn">
+          <div>
+            <button type="submit"> 
+              <a style="color: black"><strong>Entrar</strong></a>
+            </button>
+          </div>
+          </form>
+          <div class="esq">
+            <a href="cadastro.html" style="color: white"><strong>Fazer cadastro</strong></a>
           </div>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>

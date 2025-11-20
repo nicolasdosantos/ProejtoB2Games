@@ -29,10 +29,13 @@ if (isset($_REQUEST["usuario"]) && isset($_REQUEST["senha"])) {
                 $perfilHtml = str_replace("CIDADE", $dadosCep["localidade"] ?? "-", $perfilHtml);
                 $perfilHtml = str_replace("ESTADO", $dadosCep["uf"] ?? "-", $perfilHtml);
 
+                
+
                 exit;
 
             } else {
                 echo "<h2>Senha incorreta!</h2><a href='../html/login.html'>Voltar</a>";
+                
             }
         } else {
             echo "<h2>Usuário não encontrado!</h2><a href='../html/login.html'>Voltar</a>";

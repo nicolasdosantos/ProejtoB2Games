@@ -4,7 +4,6 @@
 
     $usuario = $_REQUEST["usuario"];
     $senha = $_REQUEST["senha"];
-    $endereco = $_REQUEST["endereco"];
     $email = $_REQUEST["email"];
     $nome = $_REQUEST["nome"];
 
@@ -21,7 +20,6 @@
     $dadosUsu = [];
     $dadosUsu['usuario'] = $usuario;
     $dadosUsu['senha'] = $senha;
-    $dadosUsu['endereco'] = $endereco;
     $dadosUsu['email'] = $email;
     $dadosUsu['nome'] = $nome;
 
@@ -35,6 +33,6 @@
 
     echo "<h1>Dados Salvos!</h1>";
     echo "<br><br><br>";
-    echo "<a href = '../html/index.html'>Logar </a>"
+    echo "<a href = '../html/login.html'>Logar </a>"
 
 ?>

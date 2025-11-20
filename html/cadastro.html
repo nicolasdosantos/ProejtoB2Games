@@ -4,31 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>cadastro</title>
 </head>
 
 <body>
-    <div class="tela">
-        <div class="container">
+    <main>
+        <div class="content">
             <div class="form">
-                <div id="titulo">
-                    <h1>Cadastro</h1>
+                <div>
+                    <h1>Login</h1>
                 </div>
-                <div class="inpt">
-                    <input type="text" placeholder="Nome:">
-                    <input type="email" placeholder="Email:">
-                    <input type="password" placeholder="Senha">
-                    <input type="password" placeholder="Confirme sua senha:">
+                <div>
+                    <form action="../php/cadastro.php" method="post">
+                        <div class="inpt">
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuario: " />
+                            <input type="text" name="nome" id="nome" placeholder="Nome: " />
+                            <input type="email" name="email" id="email" placeholder="email: " />
+                            <input type="number" name="senha" id="senha" placeholder="Senha: " />
+                        </div>
+
+
                 </div>
                 <div class="btn">
-                    <button>
-                        <a  href="Login.html" style="color: black"><strong>Entrar</strong></a>
-                    </button>
+                    <div>
+                        <button type="submit">
+                            <strong>Cadastrar</strong>
+                        </button>
+                    </div>
+                    </form>
+                    <div class="esq">
+                        <a href="cadastro.html" style="color: white"><strong>Ir para o login!</strong></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
