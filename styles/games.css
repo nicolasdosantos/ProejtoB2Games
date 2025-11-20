@@ -120,6 +120,24 @@
     justify-content: center;
     padding: 30px;
     font-size: 40px;
+    color: #fff;
+}
+.cardgif{
+    background-color: rgba(255, 255, 255, 0.74);
+    height: 40vh;
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 0px 10px 30px 0px rgb(0 0 0);;
+    margin-left: 10%;
+    border: 5px solid black ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#gif{
+    height: 200px;
+    width: 200px;
 }
 
 
