@@ -1,0 +1,21 @@
+<?php
+    session_start();
+
+    // Se não estiver logado, volta para login
+    if (!isset($_SESSION["usuario"])) {
+        header("Location: ../html/login.html");
+        exit;
+    }
+
+    // Carregar HTML
+    $html = file_get_contents("../html/perfil.html");
+
+    // Substituir valores
+    $html = str_replace("NOME", $_SESSION["nome"], $html);
+    $html = str_replace("EMAIL", $_SESSION["email"], $html);
+    $html = str_replace("USUARIO", $_SESSION["usuario"], $html);
+    $html = str_replace("SENHA", $_SESSION["senha"], $html);
+
+    // Mostrar
+    echo $html;
+?>
