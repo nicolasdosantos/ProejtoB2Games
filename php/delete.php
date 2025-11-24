@@ -24,6 +24,33 @@ file_put_contents($nomeArq, json_encode($db));
 session_unset();
 session_destroy();
 
-echo "<h1>Conta excluída com sucesso!</h1>";
-echo "<br><a href='../html/login.html'>Voltar ao login</a>";
+
+
+echo "<style>
+                body{
+                    margin: 0px;
+                }
+
+                .container{
+                    height: 100vh;
+                    width: 100vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #14213D;
+                    color: white;
+                    font-size: x-large;
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+
+                .container a{
+                    color: white;
+                }
+            </style> ";
+
+echo "<div class='container'><h1>Conta excluida! </h1><a href='../html/login.html'>Votlar ao login</a> </div>";
+
 ?>
