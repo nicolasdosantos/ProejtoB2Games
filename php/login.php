@@ -1,5 +1,6 @@
 <?php
 include("config.php");
+session_start(); 
 
 if (isset($_POST["usuario"]) && isset($_POST["senha"])) {
     
@@ -18,14 +19,12 @@ if (isset($_POST["usuario"]) && isset($_POST["senha"])) {
 
             if ($usuarioInfo["senha"] === $senhaCript) {
 
-                $perfilHtml = file_get_contents("../html/perfil.html");
+                $_SESSION["usuario"] = $usuarioInfo["usuario"];
+                $_SESSION["nome"] = $usuarioInfo["nome"];
+                $_SESSION["email"] = $usuarioInfo["email"];
+                $_SESSION["senha"] = $usuarioInfo["senha"];
 
-                $perfilHtml = str_replace("NOME", $usuarioInfo["nome"], $perfilHtml);
-                $perfilHtml = str_replace("EMAIL", $usuarioInfo["email"], $perfilHtml);
-                $perfilHtml = str_replace("USUARIO", $usuarioInfo["usuario"], $perfilHtml);
-                $perfilHtml = str_replace("SENHA", $usuarioInfo["senha"], $perfilHtml);
-
-                echo $perfilHtml;
+                header("Location: perfil.php");
                 exit;
                 
             } else {

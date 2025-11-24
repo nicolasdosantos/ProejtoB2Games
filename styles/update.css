@@ -72,26 +72,49 @@
     color: white;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background: white;
     color: black;
-    height: 50%;
+    height: auto;
+    padding: 10px;
     width: 35%;
     border: 5px solid black;
     border-radius: 15px;
 }
 
-.btn{
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.info input {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 3px;
+    width:  15vw;
+    transition: 0.5s;
+}
+
+.info input:focus{
+    outline: none;
+    width: 18vw;
+}
+
+.btn {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.btn .btns button {
+.btn button {
     padding: 5px 55px;
     width: 100%;
     height: 4vh;
@@ -103,25 +126,25 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-}
-
-.btn button a{
-    
     color: white;
 }
 
-.btns button a:hover{
+.btn button a {
+
+    color: white;
+}
+
+.btns button a:hover {
     padding: 10px 40px;
     transition: 0.4s;
 }
 
 
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
-    .tabela    {
+    .tabela {
         overflow-x: auto;
         width: 95%;
     }
 }
-

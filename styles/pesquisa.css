@@ -66,62 +66,99 @@
     background-color: #14213D;
     display: flex;
     flex-direction: column;
-    gap: 25px;
     align-items: center;
-    justify-content: center;
     color: white;
 }
 
-.card{
+.inputs {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.inputs input {
+    border: 2px solid snow;
+    border-radius: 12px;
+    width: 35vh;
+    font-size: 12px;
+    padding: 6px;
+    transition: all ease 0.5s;
+}
+
+.inputs input:focus {
+    outline: 0;
+    border: 3.5px solid black;
+
+}
+
+.inputs input i {
+
+    padding: 50px;
+}
+
+.inputs button {
+    background: none;
+    border: none;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    height: 15vh;
     align-items: center;
+}
+
+.pesquisa button {
+    background: transparent;
+    border: none;
+}
+
+.historico {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historico button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 7px 0px;
+    width: 22%;
+    border-radius: 10px;
+}
+
+.historico button a{
+    color: white;
+}
+
+.card-jogo {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 550px;
     background: white;
     color: black;
-    height: 50%;
-    width: 35%;
-    border: 5px solid black;
-    border-radius: 15px;
-}
-
-.btn{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.btn .btns button {
-    padding: 5px 55px;
-    width: 100%;
-    height: 4vh;
-    background-color: #14213D;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
+    padding: 15px;
+    border-radius: 12px;
     text-align: center;
-    align-items: center;
+    border: 3px solid black;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
 }
 
-.btn button a{
-    
-    color: white;
-}
-
-.btns button a:hover{
-    padding: 10px 40px;
-    transition: 0.4s;
+.card-jogo img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 
+@media (max-width: 480px) {
 
-@media (max-width: 480px){
-
-    .tabela    {
+    .tabela {
         overflow-x: auto;
         width: 95%;
     }
 }
-
